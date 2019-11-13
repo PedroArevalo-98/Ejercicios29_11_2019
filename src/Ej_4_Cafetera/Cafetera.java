@@ -23,8 +23,20 @@ public class Cafetera {
 		
 	}
 	public int servirTaza (int capacidadtaza) {
+		int cantidadtaza=0;
 		if (cantidadActual > capacidadtaza) {
-			capacidadtaza= cantidadActual-capacidadtaza; 
+			cantidadtaza= cantidadActual-capacidadtaza; 
+			 System.out.println("No cabe en la taza, la cantidad que sobra es");
+			 return cantidadtaza;
+		}else { 
+			cantidadtaza=cantidadActual;
+			return cantidadtaza;
 		}
+	}
+	public void vaciarCafetera() {
+		cantidadActual=0;
+	}
+	public void agregarCafe(int cantidad) {
+		
 	}
 }
